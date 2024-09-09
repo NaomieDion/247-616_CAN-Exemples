@@ -46,10 +46,10 @@ int main(int argc, char **argv)
 	/// A filter matches, when <received_can_id> & mask == can_id & mask
 	struct can_filter rfilter[1]; // filtres pour 2 ID
 
-	rfilter[0].can_id   = 0x550; 
-	rfilter[0].can_mask = 0xFF0;
-	rfilter[1].can_id   = 0x480;
-	rfilter[1].can_mask = 0xFF0;
+	rfilter[0].can_id   = 0x0F7; 
+	rfilter[0].can_mask = 0x0FF;
+	//rfilter[1].can_id   = 0x480;
+	//rfilter[1].can_mask = 0xFF0;
 
 	setsockopt(fdSocketCAN, SOL_CAN_RAW, CAN_RAW_FILTER, &rfilter, sizeof(rfilter));
 

@@ -35,6 +35,7 @@ int main(int argc, char *argv[]) //char **argv)
 		return -1;
 	}
 	
+	
 	/*
 	Ensuite, récupérer l'index de l'interface pour le nom de l'interface (can0, can1, vcan0, etc.) 
 	que nous souhaitons utiliser. Envoyer un appel de contrôle d'entrée/sortie et 
